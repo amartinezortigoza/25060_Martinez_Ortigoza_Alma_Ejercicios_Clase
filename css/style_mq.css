@@ -1,0 +1,29 @@
+@charset "utf-8";
+body{
+	background-color:#F4F7B2; 
+	color: #000000; 
+}
+h1{
+	color:#3C195F;  
+}
+.caja{
+	
+}
+
+@media screen and (max-width:768px) and (min-width:321px){
+body {
+    background-color: #215F64;
+}
+h1 {
+   color: #EBF6BC;
+}
+}
+
+@media screen and (max-width:320px){
+body {
+    background-color: #E45658;
+}
+h1 {
+    color: #370B0C;
+}
+}

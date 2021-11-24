@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tablas</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		h1,h5{
+		color:#f2f2f2;
+		}
+		h1{
+			font-size: 50px;
+		}
+		h2{
+			color:#272d2f;
+		}
+		header,nav,main,footer{
+			width: 800px;
+				/*height:100px;*/
+			background-color:#FE724C;
+			padding:50px;
+			margin:0 auto 
+		}
+		header{
+			text-align: center;
+		}
+		footer{
+			text-align: center;
+		}
+		nav{
+			background-color:#FFC529;
+			height:5;
+			padding: 30px 50px;
+		}
+		nav ul li {
+    display: inline-block;
+    margin-left: -1px;
+    margin-right: 10px;
+    list-style-type: none;
+    height: 20px;
+}
+		main{
+			background-color:#272d2f;
+			height: auto;
+		}	
+		section{
+			width:600px;
+			height: auto;
+			background-color:#f2f2f2;
+			margin: 30px auto;
+			padding: 30px 30px; 
+		}
+		footer{
+			background-color:#FE724C;
+			height: 15px;
+		}
+		dt{
+			margin: 20px 0px;
+		}
+		table{
+			background-color:#f2f2f2; 
+			color:#FE724C;
+		}
+		th{
+			color:#161212;
+		}
+		#t01,#t01 th, #t01 td, #t02, #t02 th, #t02 td{
+			border-collapse: collapse;
+		}
+		#t01, #t01 th, #t01 td{
+			border: 1px solid #272d2f;
+			padding: 5px;
+		}
+		#t01 th{
+			background-color:#FFC529;	
+		}
+		#t02, #t02 th, #t02 td{
+			border: 1px solid #272d2f;
+			color:#2A2642;
+			border-collapse: separate;
+			border-spacing: 10px;
+		}
+		#t02 th{
+			background-color: #FFC529;
+		}
+		#t03 tr:nth-child(even){
+			color:#FE724C;
+			background-color:#272d2f; 
+		}
+		#t03 tr:nth-child(odd){
+			background-color:#FFC529;
+			color:#0A0A0A
+		}
+		#t03 th{
+			background-color:#FE724C; 
+		}
+		#t04 td:nth-child(even){
+			color:#FE724C;
+			background-color:#272d2f; 
+		}
+		#t04 td:nth-child(odd){
+			background-color:#FFC529;
+			color:#0A0A0A
+		}
+		#t04 th{
+			background-color:#FE724C; 
+		}
+		#t05 tr:hover{
+			background-color:#FFC529;
+			color:#272d2f; 
+		}
+		#t05 th{
+			background-color:#FE724C;
+			color:#272d2f;
+		}
+		#t05{
+			width: 530px;
+		}
+		#t05 th{
+			height: 50px;
+		}
+		#t05 td{
+			height: 40px;
+			padding-left: 10px;
+			vertical-align: bottom;
+		}
+		#t05, #t05 th, #t05 td{
+			border-collapse: collapse;
+		}
+		#t06{
+			width:100%;
+		}
+		#t06 th, #t06 td{
+			text-align: center;
+			border: 1px solid #FFC529;  
+			height: 25px; 
+		}
+		#t06, #t06 th, #t06 td{
+			border-collapse: collapse;
+		}
+	a:link{
+	color:#F23C13;
+	text-decoration: none; 
+	font-weight: bold; 
+}
+a:visited{
+    color: #272d2f;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:active{
+    color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold; 
+}
+a:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}	
+	</style>
+	
+</head>
+
+<body>
+	<header>
+		<h1>Tablas en HTML</h1>
+	</header>
+	<nav>
+	<ul>
+		<li><a href="../index.html">Inicio</a></li>
+    <li><a href="mi_primera_pagina.html">Mi primera pagina</a></li>
+    <li><a href="tablas.html">Tablas</a></li>
+    <li><a href="listas.html">Listas</a></li>
+    <li><a href="enlaces.html">Enlaces</a></li>
+		<li><a href="imagenes.html">Imagenes</a></li>
+		<li><a href="audio.html">Audio</a></li>
+		<li><a href="video.html">Video</a></li>
+		<li><a href="animate.html">Animate</a></li>
+		<li><a href="formularios.html">Formularios</a></li>
+		<li><a href="flexbox.html">Flexbox</a></li>
+  </ul>
+	</nav>
+<main>
+  <section>
+			<dt><h2>Tabla simple</h2></dt>
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Direccion</th>
+						<th>Telefono</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Luz Barrera</td>
+						<td>Calle Magon #11</td>
+						<td>2228976544</td>
+					</tr>
+					<tr>
+						<td>Alondra Marquez</td>
+						<td>Calle Bugambilias #2</td>
+						<td>2212647890</td>
+					</tr>
+					<tr>
+						<td>Diego Martinez</td>
+						<td>Colonia Colombres #6</td>
+						<td>2211997865</td>
+					</tr>
+					<tr>
+						<td>Luis Robledo</td>
+						<td>Privada Republica #9</td>
+						<td>2221006789</td>
+					</tr>
+					<tr>
+						<td>Mariana Rosas</td>
+						<td>Privada Marruecos #4</td>
+						<td>2212749850</td>
+					</tr>
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+  </section>
+  <section>
+		  <dt><h2>Tabla con bordes colapsados</h2></dt>
+		  <table id="t01" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th>Telefono</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Luz Barrera</td>
+		        <td>Calle Magon #11</td>
+		        <td>2228976544</td>
+	          </tr>
+		      <tr>
+		        <td>Alondra Marquez</td>
+		        <td>Calle Bugambilias #2</td>
+		        <td>2212647890</td>
+	          </tr>
+		      <tr>
+		        <td>Diego Martinez</td>
+		        <td>Colonia Colombres #6</td>
+		        <td>2211997865</td>
+	          </tr>
+		      <tr>
+		        <td>Luis Robledo</td>
+		        <td>Privada Republica #9</td>
+		        <td>2221006789</td>
+	          </tr>
+		      <tr>
+		        <td>Mariana Rosas</td>
+		        <td>Privada Marruecos #4</td>
+		        <td>2212749850</td>
+	          </tr>
+	        </tbody>
+		    <tfoot>
+	        </tfoot>
+	      </table>
+  </section>
+		<section>
+		  <dt><h2>Tabla que abarca mas de una columna</h2></dt>
+		  <table id="t02" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th colspan="2">Telefonos</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Luz Barrera</td>
+		        <td>Calle Magon #11</td>
+		        <td>2228976544</td>
+				<td>2225608931</td>
+	          </tr>
+		      <tr>
+		        <td>Alondra Marquez</td>
+		        <td>Calle Bugambilias #2</td>
+		        <td>2212647890</td>
+				<td>2221089967</td>
+	          </tr>
+		      <tr>
+		        <td>Diego Martinez</td>
+		        <td>Colonia Colombres #6</td>
+		        <td>2211997865</td>
+				<td>2213456109</td>
+	          </tr>
+		      <tr>
+		        <td>Luis Robledo</td>
+		        <td>Privada Republica #9</td>
+		        <td>2221006789</td>
+				<td>2225303078</td>
+	          </tr>
+		      <tr>
+		        <td>Mariana Rosas</td>
+		        <td>Privada Marruecos #4</td>
+		        <td>2212749850</td>
+				<td>2211192992</td>
+	          </tr>
+	        </tbody>
+		    <tfoot>
+	        </tfoot>
+	      </table>
+  </section>
+  <section>
+			<dt><h2>Tabla con bandas o rayas horizontales de diferente color</h2></dt>
+	<table id="t03" border="1">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Direccion</th>
+						<th>Telefono</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Luz Barrera</td>
+						<td>Calle Magon #11</td>
+						<td>2228976544</td>
+					</tr>
+					<tr>
+						<td>Alondra Marquez</td>
+						<td>Calle Bugambilias #2</td>
+						<td>2212647890</td>
+					</tr>
+					<tr>
+						<td>Diego Martinez</td>
+						<td>Colonia Colombres #6</td>
+						<td>2211997865</td>
+					</tr>
+					<tr>
+						<td>Luis Robledo</td>
+						<td>Privada Republica #9</td>
+						<td>2221006789</td>
+					</tr>
+					<tr>
+						<td>Mariana Rosas</td>
+						<td>Privada Marruecos #4</td>
+						<td>2212749850</td>
+					</tr>
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+	</section>
+	<section>
+	  <dt>
+	    <h2>Tabla con bandas o rayas verticales de diferente color</h2>
+      </dt>
+	  <table id="t04" border="1">
+	    <thead>
+	      <tr>
+	        <th>Nombre</th>
+	        <th>Direccion</th>
+	        <th>Telefono</th>
+			<th>Ciudad</th>
+          </tr>
+        </thead>
+	    <tbody>
+	      <tr>
+	        <td>Luz Barrera</td>
+	        <td>Calle Magon #11</td>
+	        <td>2228976544</td>
+			<td>Puebla</td>
+          </tr>
+	      <tr>
+	        <td>Alondra Marquez</td>
+	        <td>Calle Bugambilias #2</td>
+	        <td>2212647890</td>
+			<td>Puebla</td>
+          </tr>
+	      <tr>
+	        <td>Diego Martinez</td>
+	        <td>Colonia Colombres #6</td>
+	        <td>2211997865</td>
+			<td>Puebla</td>
+          </tr>
+	      <tr>
+	        <td>Luis Robledo</td>
+	        <td>Privada Republica #9</td>
+	        <td>2221006789</td>
+			<td>Puebla</td>
+          </tr>
+	      <tr>
+	        <td>Mariana Rosas</td>
+	        <td>Privada Marruecos #4</td>
+	        <td>2212749850</td>
+			<td>Puebla</td> 
+          </tr>
+			<tr>
+	        <td>Enrique Sanchez</td>
+	        <td>Privada Marruecos #4</td>
+	        <td>2212749850</td>
+			<td>Puebla</td>
+          </tr>
+        </tbody>
+	    <tfoot>
+        </tfoot>
+      </table>
+  </section>
+	<section>
+	  <dt>
+	    <h2>Tabla con resaltado flotante</h2>
+      </dt>
+	  <table id="t05" border="1">
+	    <thead>
+	      <tr>
+	        <th>Nombre</th>
+	        <th>Direccion</th>
+	        <th>Telefono</th>
+			<th>Ciudad</th>
+          </tr>
+        </thead>
+	    <tbody>
+	      <tr>
+	        <td>Luz Barrera</td>
+	        <td>Calle Magon #11</td>
+	        <td>2228976544</td>
+			<td>Puebla</td>
+          </tr>
+	      <tr>
+	        <td>Alondra Marquez</td>
+	        <td>Calle Bugambilias #2</td>
+	        <td>2212647890</td>
+			<td>Puebla</td>
+          </tr>
+	      <tr>
+	        <td>Diego Martinez</td>
+	        <td>Colonia Colombres #6</td>
+	        <td>2211997865</td>
+			<td>Puebla</td>
+          </tr>
+	      <tr>
+	        <td>Luis Robledo</td>
+	        <td>Privada Republica #9</td>
+	        <td>2221006789</td>
+			<td>Puebla</td>
+          </tr>
+	      <tr>
+	        <td>Mariana Rosas</td>
+	        <td>Privada Marruecos #4</td>
+	        <td>2212749850</td>
+			<td>Puebla</td> 
+          </tr>
+			<tr>
+	        <td>Enrique Sanchez</td>
+	        <td>Privada Marruecos #4</td>
+	        <td>2212749850</td>
+			<td>Puebla</td>
+          </tr>
+        </tbody>
+	    <tfoot>
+        </tfoot>
+      </table>
+  </section>
+	<section style="overflow-x:auto">
+		<dt><h2>Tabla responsive</h2></dt>
+		<table id="t06">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Pedro Reyes</td>
+					<td>100</td>
+					<td>67</td>
+					<td>99</td>
+					<td>60</td>
+					<td>75</td>
+					<td>40</td>
+					<td>100</td>
+					<td>75</td>
+					<td>88</td>
+					<td>60</td>
+					<td>90</td>
+					<td>100</td>
+					<td>65</td>
+					<td>70</td>
+					<td>42</td>
+					<td>21</td>
+				</tr>
+				<tr>
+					<td>Ana Morales</td>
+					<td>90</td>
+					<td>75</td>
+					<td>90</td>
+					<td>50</td>
+					<td>75</td>
+					<td>60</td>
+					<td>80</td>
+					<td>80</td>
+					<td>75</td>
+					<td>60</td>
+					<td>90</td>
+					<td>45</td>
+					<td>67</td>
+					<td>100</td>
+					<td>100</td>
+					<td>100</td>
+				</tr>
+				<tr>
+					<td>Yair Ponce</td>
+					<td>100</td>
+					<td>50</td>
+					<td>75</td>
+					<td>100</td>
+					<td>75</td>
+					<td>87</td>
+					<td>50</td>
+					<td>50</td>
+					<td>50</td>
+					<td>60</td>
+					<td>90</td>
+					<td>100</td>
+					<td>40</td>
+					<td>50</td>
+					<td>28</td>
+					<td>99</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+	</section>
+  </main>
+	<footer>
+		<h5>Elaborado por Alma Jazmin Martinez Ortigoza</h5>
+	</footer>
+</body>
+</html>
